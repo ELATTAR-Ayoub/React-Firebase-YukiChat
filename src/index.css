@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* ./src/index.css */
+
+@import-normalize;
+@tailwind base;
+@tailwind components;
+
+@layer components {
+  *,*::before,*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .flexCenter{
+    @apply flex justify-center items-center;
+  }
+  .centerChild {
+    @apply left-1/2 right-1/2 absolute -translate-x-1/2 -translate-y-1/2;
+  }
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  .App {
+      @apply relative h-screen w-screen flexCenter flex-col bg-primary capitalize font-primary;
+  }
+  .header {
+    @apply w-full h-7vh bg-sideColor dark:bg-primary flex justify-between items-center text-primary dark:text-sideColor md:h-10vh;
+  }
+  .main {
+    @apply w-full h-93vh flex justify-center items-center text-primary md:h-90vh;
+  }
+  .msgInput {
+    @apply w-full bg-transparent border-2 border-primary rounded-md p-2 mr-1 placeholder-primary placeholder-opacity-50 outline-none dark:border-sideColor dark:placeholder-sideColor ;
+  }
+  .msgInputcontainer {
+    @apply bottom-0 w-full mx-2 p-2  bg-sideColor  text-primary flex justify-between items-center text-sm dark:bg-primary dark:text-sideColor;
+  }
+  .submitButt {
+    @apply h-full p-2 rounded-lg font-semibold bg-primary text-secondary hover:text-secondary-light dark:bg-sideColor dark:text-primary dark:hover:text-secondary-light ;
+  }
+  .sign-in {
+    @apply p-3 bg-secondary text-primary transform transition-all shadow-xl font-semibold text-base hover:bg-secondary-dark ;
+  }
+  .sign-out {
+    @apply p-2 mx-2 bg-red-600  text-base md:text-lg font-bold hover:bg-red-500;
+  }
+  .menuIcon {
+    @apply p-2 mx-2 text-base md:text-lg font-bold cursor-pointer ;
+  }
+  .sideNav {
+    @apply w-full h-0 fixed z-30 top-0 left-0 overflow-hidden flex justify-start items-center flex-col transition-all text-primary dark:text-sideColor bg-sideColor dark:bg-primary text-lg ;
+  }
+  .sideNav div:not(.header, .header div, .closeNav), .sideNav a{
+    @apply p-2 my-2 outline-none border-0 w-full text-center transition-all cursor-pointer font-bold text-lg sm:text-xl hover:bg-secondary hover:text-primary ;
+  }
+  .sideNav .header{
+    @apply text-xl md:text-2xl hover:bg-transparent;
+  }
+  .sideNav .header div{
+    @apply p-2 m-2;
+  }
+  .sideNav .ss{
+    @apply my-auto hover:bg-primary hover:text-secondary dark:hover:text-sideColor;
+  }
+
+  /*  */
+  .message {
+    @apply  flex justify-center items-center w-full my-2 mx-2 bg-transparent text-base md:text-lg  ;
+  }
+  .message img{
+    @apply w-14 h-14 rounded-full;
+  }
+  .message .content {
+    @apply  flex flex-col justify-center ;
+  }
+  .message p{
+    @apply normal-case bg-sideColor text-primary  p-2 flex flex-wrap break-words rounded-xl;
+  }
+  .message .time {
+    @apply relative top-1 text-xs opacity-50 text-black dark:text-primary;
+  }
+  /* sent */
+  .sent {
+    @apply flex-row-reverse  self-end pl-semi-mini;
+  }
+  .sent {
+    justify-content: end;
+  }
+  .sent img{
+    @apply rounded-full ml-2;
+  }
+  .sent .content {
+    @apply  items-end ;
+  }
+  .sent p{
+    @apply bg-secondary dark:bg-transparent border-2 border-transparent border-solid dark:border-secondary ;
+  }
+  .sent .time {
+    @apply  self-end ;
+  }
+  /* received */
+  .received {
+    @apply  justify-start pr-semi-mini self-baseline ;
+  }
+  .received img{
+    @apply mr-2;
+  }
+  .received .content {
+    @apply  items-start ;
+  }
+  .received p{
+    @apply bg-sideColor dark:bg-transparent border-2 border-transparent border-solid dark:border-primary dark:text-primary;
+  }
+  .received .time {
+    @apply  self-start ;
+  }
+};
+
+/* @keyframes bounce {
+  from {
+  transform: translateY(-0%);
+  }
+  to {
+  transform: translateY(-25%);
+  }
+} */
+
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  @apply border-2 border-solid border-sideColor border-opacity-10 border-t-0 border-b-0 bg-transparent w-2 ;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-secondary opacity-70 hover:bg-secondary-light;
+}
