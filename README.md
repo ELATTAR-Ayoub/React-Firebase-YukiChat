@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Live Demo:
+[Live demo](https://jovial-goodall-dc9f4f.netlify.app).
+
 ## Available Scripts
 
 In the project directory, you can run:
