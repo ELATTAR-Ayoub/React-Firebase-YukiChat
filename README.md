@@ -54,7 +54,7 @@ Music Search uses the following dependencies:
 
 ## Live Demo
 
-You can see a live demo of YukiChat at [Live Demo](jovial-goodall-dc9f4f.netlify.app/).
+You can see a live demo of YukiChat at [Live Demo](https://jovial-goodall-dc9f4f.netlify.app/).
 
 ## Contributing
 
