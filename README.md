@@ -45,7 +45,7 @@ Music Search uses the following dependencies:
 
 ## Dependencies
 
-Music Search uses the following dependencies:
+This App uses the following dependencies:
 
 - [React.js](https://reactjs.org/) - a JavaScript library for building user interfaces
 - [Firebase](https://firebase.google.com/) - a platform for building mobile and web applications
@@ -58,10 +58,10 @@ You can see a live demo of YukiChat at [Live Demo](https://jovial-goodall-dc9f4f
 
 ## Contributing
 
-If you would like to contribute to Music Search, you can do so by creating a fork of this repository and submitting a pull request. Please be sure to follow the existing coding conventions and include tests for any new features or changes.
+If you would like to contribute to this App, you can do so by creating a fork of this repository and submitting a pull request. Please be sure to follow the existing coding conventions and include tests for any new features or changes.
 If you have any problem with that contact me. The app is still under developing.
 
 
 ## License
 
-Music Search is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+This App is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
